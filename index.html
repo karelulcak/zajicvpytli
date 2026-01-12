@@ -10,7 +10,7 @@
         body {
             background-color: #ffffff;
             margin: 0;
-            padding: 20px; /* Přidán vnitřní okraj, aby text nebyl na kraji displeje */
+            padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -24,44 +24,43 @@
         .content {
             text-align: center;
             width: 100%;
-            max-width: 1000px;
         }
 
-        /* --- NASTAVENÍ PRO POČÍTAČ (VELKÉ OBRAZOVKY) --- */
-        img {
-            width: 550px; 
-            max-width: 100%;
-            height: auto;
-            margin: 30px 0;
-        }
-
+        /* NASTAVENÍ PRO POČÍTAČ */
         h1 {
-            font-size: 80px;
+            font-size: 70px; /* Mírně zmenšeno pro jistotu */
             font-weight: 900;
             margin: 0;
             line-height: 1.1;
-            word-wrap: break-word; /* Zabrání přetečení dlouhého textu */
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 500px; 
+            max-width: 90%;
+            height: auto;
+            margin: 20px 0;
         }
 
         p {
-            font-size: 50px;
+            font-size: 45px;
             font-weight: 900;
             margin: 0;
         }
 
-        /* --- SPECIÁLNÍ ÚPRAVA PRO MOBILY (Obrazovky menší než 768px) --- */
-        @media (max-width: 768px) {
+        /* ÚPRAVA SPECIÁLNĚ PRO MOBILY */
+        @media (max-width: 600px) {
             h1 {
-                font-size: 35px; /* Menší písmo pro doménu na mobilu */
+                font-size: 28px; /* Tato velikost se vejde na jeden řádek mobilu */
             }
 
             img {
-                width: 300px; /* Menší obrázek na mobilu */
-                margin: 20px 0;
+                width: 250px; /* Menší obrázek pro mobily */
+                margin: 15px 0;
             }
 
             p {
-                font-size: 25px; /* Menší podtext na mobilu */
+                font-size: 22px; /* Menší podtext */
             }
         }
     </style>
